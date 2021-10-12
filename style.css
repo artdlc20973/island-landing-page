@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat|Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", Verdana, Tahoma, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.ibb.co/6WXQdHS/palmtreeisland.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #44a6be;
+  padding: 6px 25px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: 0.7s ease;
+}
+
+ul li a:hover {
+  background: #44a6be;
+  color: #dddddd;
+}
+
+.logo h1 {
+  float: left;
+  width: auto;
+  height: auto;
+  color: #dddddd;
+  font-family: "Caveat", Verdana, Tahoma, sans-serif;
+  font-size: 2rem;
+  -webkit-text-stroke: 2px black;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: #ddd;
+  font-size: 2.8rem;
+  -webkit-text-stroke: 2px black;
+}
+
+.button {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #ddd;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: 0.7s ease;
+}
+
+.btn:hover {
+  background: #44a6be;
+  color: #ddd;
+}
+
+@media (max-width: 400px) {
+  ul li a {
+    text-decoration: none;
+    color: #44a6be;
+    padding: 4px 15px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: 0.7s ease;
+  }
+  .title h1 {
+    color: #ddd;
+    font-size: 2rem;
+    -webkit-text-stroke: 2px black;
+  }
+  .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  ul li a {
+    color: #44a6be;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: 0.7s ease;
+  }
+  .title h1 {
+    color: #ddd;
+    font-size: 2.7rem;
+    -webkit-text-stroke: 2px black;
+  }
+  .button .btn-1 {
+    display: none;
+  }
+}
